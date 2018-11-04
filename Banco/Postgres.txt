@@ -1,0 +1,17 @@
+-- Table: public.produtos
+-- DROP TABLE public.produtos;
+CREATE TABLE public.produtos
+(
+  id integer NOT NULL,
+  nome character(60),
+  comentario character(255),
+  altura character(60),
+  largura character(60),
+  profundidade character(60),
+  CONSTRAINT "Produtos_pkey" PRIMARY KEY (id)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.produtos
+  OWNER TO postgres;
